@@ -2,7 +2,9 @@
 
 ## How to run it
 
-There are 4 flags:
+1. Follow [this instructions from Google to "checkout" your full location history as KML](https://support.google.com/accounts/answer/3024190).
+
+2. Clone this repo and then run [LifePath.py](./LifePath.py) with any of these 4 flags:
 
 Flag | Purpose | Example Usage
 --- | --- | ---
@@ -10,6 +12,8 @@ Flag | Purpose | Example Usage
 `-plotall` | To generate a single image with one LifePath | `./LifePath.py -plotall locationsSHORT.dat`
 `-plot` | To generate a set of images for GIF-making | `./LifePath.py -plot locationsSHORT.dat`
 `-gif` | To generate a GIF from the set of images | `./LifePath.py -gif images/*png`
+
+3. The source code of [LifePath.py](./LifePath.py) has a few settings at the top that can be tweaked.
 
 ## Devpost description
 
