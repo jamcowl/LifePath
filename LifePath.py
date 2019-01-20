@@ -20,8 +20,8 @@ saveOn = True # don't change this, use the argument -plot or -plotall
 showLabels = False # toggle labels
 
 # you have to tweak these to get the kind of aspect ratio you want
-corners = [-10,70,-140,160,20] # lat lower left, lat upper right, lon lower left, lon upper right, lat truth (see https://matplotlib.org/basemap/api/basemap_api.html)
-#corners = [-1,70,-130,150,20] # lat lower left, lat upper right, lon lower left, lon upper right, lat truth (see https://matplotlib.org/basemap/api/basemap_api.html)
+# corners = [-10,70,-140,160,20] # a bit smaller
+corners = [-1,70,-130,150,20] # lat lower left, lat upper right, lon lower left, lon upper right, lat truth (see https://matplotlib.org/basemap/api/basemap_api.html)
 
 
 
@@ -65,7 +65,6 @@ def trimLocations(locations, minDistance=minDist):
 		dist = haversine(previousLocation,location)
 		if dist > minDistance:
 			trimmedLocations.append(location)
-			#print "<gx:coord>"+str(location[0])+" "+str(location[1])+" 0</gx:coord>" # for manual trimming
 			previousLocation = location
 	return trimmedLocations
 
@@ -80,25 +79,15 @@ def drawCurvesOnMap(darkMap, lightMap, coords):
 		print " > Creating directory 'images'..."
 		os.mkdir("images")
 	
-	# loop over coordinates
-	(prevLat,prevLon) = coords[0]
-	ncoords = len(coords)
+	# track labelled cities
 	lastPlotName = ""
 	plottedCities = []
 	citylats = []
 	citylons = []
-	
-	"""
-	lons = [-135.3318, -134.8331, -134.6572]
-	lats = [57.0799, 57.0894, 56.2399]
-	x,y = map(lons, lats)
-	map.plot(x, y, 'bo', markersize=18)
-	 
-	labels = ['Sitka', 'Baranof Warm Springs', 'Port Alexander']
-	for label, xpt, ypt in zip(labels, x, y):
-		plt.text(xpt, ypt, label)
-	"""
-	
+
+	# loop over coordinates
+	(prevLat,prevLon) = coords[0]
+	ncoords = len(coords)
 	for i, coord in enumerate(coords[1:]):
 		num = ("000000"+str(i))[-5:]
 		lastPlotName = num
@@ -177,19 +166,11 @@ def getCityFromLatLon(coord):
 		chinese = re.findall(ur'[\u4e00-\u9fff]+', thisCity) # check for chinese characters, which don't play well with pyplot
 		if len(chinese) > 0:
 			return "FAILFAIL"
-		#thisCity = "Taipei" if "台北市" in thisCity else thisCity # total hack, but it's a hackathon so I dgaffffff
 		return thisCity
 	except Exception, e:
 		return "FAILFAIL"
 
-"""
-coord = (-3.2647455, 48.6203793) # test
-#coord = (40.692336,-73.9905653) # brooklyn
-print "getting city..."
-city = getCityFromLatLon(coord)
-print city
-raw_input("wut?")
-"""
+
 
 
 ###########################################################################################
@@ -282,8 +263,6 @@ if mode is "plot":
 
 	# draw map and curves
 	print " > Creating background map..."
-	#worldMap = Basemap(projection='merc',llcrnrlat=-80,urcrnrlat=80,llcrnrlon=-180,urcrnrlon=180,lat_ts=20,resolution='i') # res = clihf
-	#worldMap = Basemap(projection='merc',llcrnrlat=-10,urcrnrlat=70,llcrnrlon=-140,urcrnrlon=160,lat_ts=20,resolution='i')
 	worldMap = Basemap(projection='merc',llcrnrlat=corners[0],urcrnrlat=corners[1],llcrnrlon=corners[2],urcrnrlon=corners[3],lat_ts=corners[4],resolution='i')
 	worldMap.drawmapboundary(fill_color=water) # ocean colour
 	worldMap.fillcontinents(color=land,lake_color=water) # fill continents, set lake color same as ocean colour
