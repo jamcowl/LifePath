@@ -15,6 +15,8 @@ Flag | Purpose | Example Usage
 
 3. The source code of [LifePath.py](./LifePath.py) has a few settings at the top that can be tweaked.
 
+---
+
 ## Description from the [Devpost submission](https://devpost.com/software/lifepath)
 
 ### Inspiration
