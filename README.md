@@ -46,7 +46,7 @@ Manually adding a bunch of coordinates from 10-20 family holidays before I had a
 Implementing the labels in a couple of hours flat - HERE.com's API was much simpler to implement than I expected.
 
 ### What I learned
-I learned out how to handle JSON data, as that was the format the HERE.com API supplied its results in.
+I learned how to handle JSON data, as that was the format the HERE.com API supplied its results in.
 
 ### What's next for LifePath
-Interactivity - rather than a static image, it would be nice to be able to zoom in and click on locations to see the dates when I was there.
+Interactivity. Rather than a static image, it would be nice to be able to zoom in and click on locations to see the dates when I was there.
