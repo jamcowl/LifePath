@@ -2,15 +2,13 @@
 # -*- coding: latin-1 -*-
 
 print "Importing libraries..."
-import sys, os, imageio, copy, urllib2, json, re
+import sys, os, imageio, copy, urllib2, json, re, warnings, matplotlib.cbook
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 from mpl_toolkits.basemap import Basemap
 from PIL import Image
 from haversine import haversine
 from colour import Color
-import warnings
-import matplotlib.cbook
 warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation) # who cares about warnings amirite?
 print "Imports done."
 
