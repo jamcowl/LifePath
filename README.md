@@ -2,7 +2,7 @@
 
 ## How to run it
 
-1. Follow [this instructions from Google to "checkout" your full location history as KML](https://support.google.com/accounts/answer/3024190).
+1. Follow [these instructions from Google to "checkout" your full location history as KML](https://support.google.com/accounts/answer/3024190).
 
 2. Clone this repo and then run [LifePath.py](./LifePath.py) with any of these 4 flags:
 
