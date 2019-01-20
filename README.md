@@ -2,9 +2,14 @@
 
 ## How to run it
 
-Text
+There are 4 flags:
 
-***
+Flag | Purpose | Example Usage
+--- | --- | ---
+`-shorten` | To prepare a shorter list of location data | `./LifePath.py -shorten locations.kml`
+`-plot` | To generate a set of images for GIF-making | `./LifePath.py -plot locationsSHORT.dat`
+`-gif` | To generate a GIF from the set of images | `./LifePath.py -gif images/*png`
+`-plotall` | To generate a single image that can't be GIF'd | `./LifePath.py -plotall locationsSHORT.dat`
 
 ## Devpost description
 
