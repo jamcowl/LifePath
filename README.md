@@ -13,7 +13,14 @@ Flag | Purpose | Example Usage
 `-plot` | To generate a set of images for GIF-making | `./LifePath.py -plot locationsSHORT.dat`
 `-gif` | To generate a GIF from the set of images | `./LifePath.py -gif images/*png`
 
-3. The source code of [LifePath.py](./LifePath.py) has a few settings at the top that can be tweaked.
+3. The plotting scripts can work on any set of location data in the following format:
+```
+(-1.5133032, 48.6360166)
+(0.00644029, 51.3752748)
+(-3.2694487, 51.5022199)
+(0.00644029, 51.3752748)
+```
+4. The source code of [LifePath.py](./LifePath.py) can be tweaked to change the colour, aspect ratio, resolution, etc.
 
 
 
