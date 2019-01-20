@@ -15,7 +15,7 @@ Flag | Purpose | Example Usage
 
 3. The source code of [LifePath.py](./LifePath.py) has a few settings at the top that can be tweaked.
 
-## Devpost description
+## Description from the [Devpost submission](https://devpost.com/software/lifepath)
 
 ### Inspiration
 I realised I've carried a smartphone since 2011 so my location history was pretty reliably captured since then. You can download this from Google but it's just a block of coordinates in KML, so I wanted a visualisation. I thought a single unbroken line would be an elegant way to see where I'd been, like a wake or trail of footprints.
