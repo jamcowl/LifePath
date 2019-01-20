@@ -13,7 +13,7 @@ Flag | Purpose | Example Usage
 `-plot` | To generate a set of images for GIF-making | `./LifePath.py -plot locationsSHORT.dat`
 `-gif` | To generate a GIF from the set of images | `./LifePath.py -gif images/*png`
 
-3. The plotting scripts can work on any list of (lat,lon) pairs, e.g:
+3. The plotting scripts can work on any list of (lat,lon) pairs, i.e. a file that looks like this:
 ```
 (-1.5133032, 48.6360166)
 (0.00654029, 51.3152748)
