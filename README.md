@@ -1,6 +1,6 @@
 # LifePath
 
-===
+***
 
 ## Devpost description
 
@@ -32,7 +32,7 @@ I learned out how to handle JSON data, as that was the format the HERE.com API s
 ### What's next for LifePath
 Interactivity - rather than a static image, it would be nice to be able to zoom in and click on locations to see the dates when I was there.
 
-===
+***
 
 ## How to run it
 
