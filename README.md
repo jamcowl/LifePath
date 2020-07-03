@@ -43,6 +43,7 @@ I realised I've carried a smartphone since 2011 so my location history was prett
 
 ![Devpost-compressed GIF](https://i.imgur.com/ysMfohO.gif)
 
+<!--- ignore the rest
 ### How I built it
 Once I had the first basic *LifePath* I realised I wanted to add some meaningful labels, but Google's data only contains geocoordinates. This is where [HERE.com's API](https://developer.here.com/) came in. I used [their reverse geocoding API](https://developer.here.com/documentation/geocoder/topics/example-reverse-geocoding.html) to extract the city names of some well-separated points, then passed those to my plotting routine to add labels (higher quality version on [Imgur](https://i.imgur.com/ujE5INg.png)): ![Alt Text](https://i.imgur.com/ujE5INg.png)
 
@@ -57,3 +58,4 @@ I learned how to handle JSON data, as that was the format the HERE.com API suppl
 
 ### What's next for LifePath
 Interactivity. Rather than a static image, it would be nice to be able to zoom in and click on locations to see the dates when I was there.
+-->
