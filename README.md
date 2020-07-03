@@ -39,9 +39,7 @@ I realised I've carried a smartphone since 2011 so my location history was prett
 
 2. **Plot geodesics between all those points:** a [geodesic](https://en.wikipedia.org/wiki/Geodesic) is the path of minimum distance across a curved surface (hence on flat map projections, flight paths appear curved). Using the `-plotall` flag will produce a single map with a single LifePath for all the input data. City name labels are optional. Using the `-plot` flag will produce a folder of images with each additional geodesic (which can then be combined into a GIF). This is what the combined LifePath looks like (higher quality version on [Imgur](https://i.imgur.com/3fVL6ar.png)): ![Alt Text](https://i.imgur.com/3fVL6ar.png)
 
-3. **Animate the LifePath in a GIF**: all the geodesic maps created using the `-plot` flag can be combined into a GIF using the `-gif` flag. The result looks like this (higher quality version on [Imgur](https://i.imgur.com/Y4zwgfR.gifv)):
-
-![Devpost-compressed GIF](https://i.imgur.com/ysMfohO.gif)
+3. **Animate the LifePath in a GIF**: all the geodesic maps created using the `-plot` flag can be combined into a GIF using the `-gif` flag. The result looks like this (higher quality version on [Imgur](https://i.imgur.com/Y4zwgfR.gifv)): ![Devpost-compressed GIF](https://i.imgur.com/ysMfohO.gif)
 
 <!--- ignore the rest
 ### How I built it
